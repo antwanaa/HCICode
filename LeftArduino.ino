@@ -1,7 +1,8 @@
 String incomingMessage = ""; // for incoming serial data
+int baud = 9600;
 
 void setup() {
-  Serial.begin(115200); // opens serial port, sets data rate to 9600 bps
+  Serial.begin(baud); // opens serial port, sets data rate to 9600 bps
 }
 
 void loop() {
@@ -14,8 +15,7 @@ void loop() {
       
       if(incomingMessage.charAt(1) == '1'){
         Serial.println("1");
-      }
-      else if(incomingMessage.charAt(1) == '2'){
+      }else if(incomingMessage.charAt(1) == '2'){
         Serial.println("2");
       }else if(incomingMessage.charAt(1) == '3'){
         Serial.println("3");
