@@ -15,3 +15,8 @@ Rules for messages sent through serial:
 Wiring:
 - pin 2 of RIGHT to pin 1 or LEFT
 - pin 3 of RIGHT to pin 0 of LEFT
+
+libraries required:
+pyserial : to install do: pip install pyserial
+
+IMPORTANT: for GUI to work, the setting needs to be edited in the code.
