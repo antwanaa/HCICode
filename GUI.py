@@ -4,6 +4,7 @@ from tkinter import ttk
 
 # CHANGE THIS TO THE COM PORT WHERE THE ARDUINO IS CONNECTED, eg 'COM3' or 'COM4'
 port = 'COM4'   
+#############
 
 def left():
     ser.write(bytes("l1\n", 'utf-8'))
