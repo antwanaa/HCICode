@@ -1,7 +1,6 @@
 # HCICode
 Code for our HCI Project
 
-
 Rules for messages sent through serial:
 - Message is a string
 - If desired recipient is
@@ -20,3 +19,4 @@ libraries required:
 pyserial : to install do: pip install pyserial
 
 IMPORTANT: for GUI to work, the setting needs to be edited in the code.
+
