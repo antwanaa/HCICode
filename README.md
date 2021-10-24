@@ -6,8 +6,8 @@ Rules for messages sent through serial:
 - If desired recipient is
     - Left wearable: start message with 'l'
     - Right wearable: start message with 'r'
-    - computer: start message with 'c' (not implemented)
-    - both left and right wearable: start message with 'a' (not implemented yet)
+    - computer: start message with 'c' (not implemented yet)
+    - both left and right wearable: start message with 'a' (implemented but needs refinement e.g introduce delay between right and left)
 - finish all strings with '\n'
 
 
