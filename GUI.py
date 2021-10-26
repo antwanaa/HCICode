@@ -30,7 +30,7 @@ frm.grid()
 #variable = StringVar(root)
 #variable.set('COM1') # default value
 #w = OptionMenu(root, variable, 'COM1', 'COM2', 'COM3', 'COM4', 'COM5').grid(column=0, row=1)
-#ser = serial.Serial(port, 9600, timeout=1)  # open serial port
+ser = serial.Serial(port, 9600, timeout=1)  # open serial port
 ttk.Button(frm, text="Starting Navigation", command=startNav).grid(column=0, row=0)
 ttk.Button(frm, text="      Turn Left Now      ", command=left).grid(column=0, row=1)
 ttk.Button(frm, text="      Turn Right Now      ", command=right).grid(column=1, row=1)
