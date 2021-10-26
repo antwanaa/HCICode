@@ -1,5 +1,5 @@
 String incomingMessage = ""; // for incoming serial data
-int baud = 9600;
+int baud = 9600;  // Choose Baud Rate
 
 void setup() {
   Serial.begin(baud); // opens serial port, sets data rate to 9600 bps
@@ -8,11 +8,12 @@ void setup() {
 void loop() {
   // reply only when you receive data:
   if (Serial.available() > 0) {
-    // read the incoming byte:
+    // read the incoming message:
     incomingMessage = Serial.readStringUntil('\n');
     if(incomingMessage.charAt(0) == 'l'){
       Serial.print("The LEFT Arduino is doing action: ");
       
+      // Compare the second character of the message that was received to do the corresponding action
       if(incomingMessage.charAt(1) == '1'){
         Serial.println("1");
       }else if(incomingMessage.charAt(1) == '2'){
