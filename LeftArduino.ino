@@ -1,4 +1,3 @@
-//#include <HardwareBLESerial.h>
 #include <ArduinoBLE.h>
 
 #define rxPin 2 // TX and RX pins for the software serial used to relay messages
