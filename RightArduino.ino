@@ -1,4 +1,3 @@
-//#include <HardwareBLESerial.h>
 #include <ArduinoBLE.h>
 
 #define rxPin 2 // TX and RX pins for the software serial used to relay messages
@@ -6,6 +5,7 @@
 #define vibOutPin 21u //21u pin A7
 
 #define blueLedPin 24u
+#define greenLedPin 23u
 
 int power;
 int sensitivity = 255;
@@ -39,6 +39,10 @@ void setup() {
   // set LED pin to output mode
   pinMode(ledPin, OUTPUT);
   pinMode(blueLedPin, OUTPUT);
+  pinMode(greenLedPin, OUTPUT);
+  digitalWrite(blueLedPin, HIGH);
+  digitalWrite(greenLedPin, LOW);
+
 
   // begin initialization
   if (!BLE.begin()) {
@@ -63,7 +67,7 @@ void setup() {
   BLE.advertise();
 
   Serial.println("BLE LED Peripheral");
-  digitalWrite(blueLedPin, HIGH);
+  digitalWrite(greenLedPin, HIGH);
 }
 
 void loop() {

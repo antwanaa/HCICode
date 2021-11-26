@@ -97,7 +97,7 @@ if __name__ == "__main__":
     ttk.Button(frm, text="ALARM / Get off the bus/metro", command=alarm).grid(column=1, row=3)
 
     ttk.Label(frm, text=" ").grid(column=0, row=4)
-    ttk.Label(frm, text="Directions:").grid(column=0, row=5)
+    # ttk.Label(frm, text="Directions:").grid(column=0, row=5)
     # ttk.Button(frm, text="Directions to Coffee shop", command=coffee).grid(column=0, row=6)
     # ttk.Button(frm, text="Bluetooth", command=coffee).grid(column=1, row=6)
     # ttk.Label(frm, text="Connected").grid(column=1, row=7)
